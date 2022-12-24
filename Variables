@@ -1,0 +1,40 @@
+/*package whatever //do not write package name here */
+// Contributed by Thirumalai
+import java.io.*;
+
+class luffy {
+	public static void main(String[] args)
+	{
+		int var = 10; // Declared a Local Variable
+		// This variable is local to this main method only
+		System.out.println("Local Variable: " + var);
+	}
+}
+
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class nami {
+
+	public String geek; // Declared Instance Variable
+
+	public nami()
+	{ // Default Constructor
+
+		this.code = "Thirumalai"; // initializing Instance Variable
+	}
+//Main Method
+	public static void main(String[] args)
+	{
+
+		// Object Creation
+		nami name = new nami();
+		// Displaying O/P
+		System.out.println(" name is pirate: " + name.pirates);
+	}
+}
+
+
+
+
