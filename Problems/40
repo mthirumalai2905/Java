@@ -1,0 +1,9 @@
+import java.nio.charset.Charset;
+public class Exercise40{
+public static void main(String[] args){
+System.out.println("LIst of available character sets: ");
+for(STring str: Charset.availableCharsets().keySet()){
+System.out.println(str);
+    }
+  }
+}
