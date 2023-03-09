@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class CommonDigit {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first integer between 25 to 75: ");
+        int num1 = sc.nextInt();
+        System.out.print("Enter second integer between 25 to 75: ");
+        int num2 = sc.nextInt();
+
+        // Convert integers to strings to extract digits
+        String str1 = Integer.toString(num1);
+        String str2 = Integer.toString(num2);
+        
+        // Loop through each character in first string and check if it appears in the second string
+        for (int i = 0; i < str1.length(); i++) {
+            if (str2.indexOf(str1.charAt(i)) != -1) {
+                System.out.println("True");
+                return;
+            }
+        }
+
+        System.out.println("False");
+    }
+}
