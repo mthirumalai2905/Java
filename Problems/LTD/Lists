@@ -1,0 +1,20 @@
+//Alternatively, you can use the Arrays.asList() method to create a list
+directly from an array of elements,like this:
+
+List<Integer> my_list = Arrays.asList(1, 2, 3, 4, 5);
+
+
+                                 OR
+                                 
+                                 
+//In Java, you can define a list using curly braces and
+separating the elements with commas, like this:
+
+
+List<Integer> my_list = new ArrayList<Integer>() {{
+    add(1);
+    add(2);
+    add(3);
+    add(4);
+    add(5);
+}};
