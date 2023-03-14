@@ -1,0 +1,133 @@
+import java.util.Arrays;
+
+public class MyProgram {
+    public static void main(String[] args) {
+        // Declare an array of fruits
+        String[] fruits = {"apple", "banana", "orange", "kiwi", "grape"};
+
+        // Print the entire array to the console
+        System.out.println(Arrays.toString(fruits));
+    }
+}
+
+
+
+--------------------------------------------------------------------------------------------
+
+public class MyProgram {
+    public static void main(String[] args) {
+        // Declare an array of fruits
+        String[] fruits = {"apple", "banana", "orange", "kiwi", "grape"};
+
+        // Print each fruit to the console using a for loop
+        for (int i = 0; i < fruits.length; i++) {
+            System.out.println(fruits[i]);
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------
+
+public class MyProgram {
+    public static void main(String[] args) {
+        // Declare an array of fruits
+        String[] fruits = {"apple", "banana", "orange", "kiwi", "grape"};
+
+        // Access individual elements in the array
+        System.out.println(fruits[0]); // Output: apple
+        System.out.println(fruits[2]); // Output: orange
+        System.out.println(fruits[4]); // Output: grape
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+import java.util.Arrays;
+
+public class MyProgram {
+    public static void main(String[] args) {
+        // Declare an array of fruits
+        String[] fruits = {"apple", "banana", "orange", "kiwi", "grape"};
+
+        // Perform a slicing operation on the array
+        String[] slicedFruits = Arrays.copyOfRange(fruits, 1, 4);
+
+        // Print the sliced array to the console
+        System.out.println(Arrays.toString(slicedFruits)); // Output: [banana, orange, kiwi]
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+import java.util.Arrays;
+
+public class MyProgram {
+    public static void main(String[] args) {
+        // Declare an array of fruits
+        String[] fruits = {"apple", "banana", "orange", "kiwi", "grape"};
+
+        // Perform a slicing operation on the array
+        String[] slicedFruits = Arrays.copyOfRange(fruits, 1, 4);
+
+        // Print the sliced array to the console
+        System.out.println(Arrays.toString(slicedFruits)); // Output: [banana, orange, kiwi]
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------
+
+
+public class MyProgram {
+    public static void main(String[] args) {
+        // Declare two arrays of integers
+        int[] array1 = {1, 2, 3};
+        int[] array2 = {4, 5, 6};
+
+        // Declare a new array to store the sum
+        int[] sumArray = new int[array1.length];
+
+        // Add the corresponding elements of the two arrays together
+        for (int i = 0; i < array1.length; i++) {
+            sumArray[i] = array1[i] + array2[i];
+        }
+
+        // Print the sum array to the console
+        System.out.println(Arrays.toString(sumArray)); // Output: [5, 7, 9]
+    }
+}
+
+
+----------------------------------------------------------------------------------------------------
+
+
+public class MyProgram {
+    public static void main(String[] args) {
+        // Declare two arrays of integers
+        int[] array1 = {1, 2, 3};
+        int[] array2 = {4, 5, 6};
+
+        // Declare a new array to store the combined arrays
+        int[] combinedArray = new int[array1.length + array2.length];
+
+        // Copy the contents of array1 into combinedArray
+        System.arraycopy(array1, 0, combinedArray, 0, array1.length);
+
+        // Copy the contents of array2 into combinedArray
+        System.arraycopy(array2, 0, combinedArray, array1.length, array2.length);
+
+        // Print the combined array to the console
+        System.out.println(Arrays.toString(combinedArray)); // Output: [1, 2, 3, 4, 5, 6]
+    }
+}
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
