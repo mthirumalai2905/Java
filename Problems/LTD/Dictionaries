@@ -1,0 +1,16 @@
+import java.util.HashMap;
+
+public class DictionaryExample {
+    public static void main(String[] args) {
+        // Create a new HashMap object
+        HashMap<String, String> myDictionary = new HashMap<String, String>();
+
+        // Add key-value pairs to the dictionary
+        myDictionary.put("apple", "a fruit that is typically round, red, and sweet");
+        myDictionary.put("banana", "a long curved fruit which grows in clusters");
+        myDictionary.put("orange", "a round fruit with a thick orange skin and sweet juicy flesh");
+
+        // Print the contents of the dictionary
+        System.out.println(myDictionary);
+    }
+}
