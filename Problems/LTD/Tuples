@@ -1,0 +1,69 @@
+import org.javatuples.Unit;
+
+public class TupleExample {
+    public static void main(String[] args) {
+        Unit<String> myTuple = Unit.with("hello");
+        System.out.println(myTuple);
+    }
+}
+
+
+import org.javatuples.Pair;
+
+public class TupleExample {
+    public static void main(String[] args) {
+        Pair<String, Integer> myTuple = Pair.with("hello", 42);
+        System.out.println(myTuple);
+    }
+}
+
+
+
+
+
+
+import org.javatuples.Triplet;
+
+public class TupleExample {
+    public static void main(String[] args) {
+        Triplet<String, Integer, Double> myTuple = Triplet.with("hello", 42, 3.14);
+        System.out.println(myTuple);
+    }
+}
+
+
+
+
+
+import org.javatuples.Quartet;
+
+public class TupleExample {
+    public static void main(String[] args) {
+        Quartet<String, Integer, Double, Boolean> myTuple = Quartet.with("hello", 42, 3.14, true);
+        System.out.println(myTuple);
+    }
+}
+
+
+
+import org.javatuples.Quintet;
+
+public class TupleExample {
+    public static void main(String[] args) {
+        Quintet<String, Integer, Double, Boolean, Character> myTuple = Quintet.with("hello", 42, 3.14, true, 'c');
+        System.out.println(myTuple);
+    }
+}
+
+import org.javatuples.Sextet;
+
+public class TupleExample {
+    public static void main(String[] args) {
+        Sextet<String, Integer, Double, Boolean, Character, Float> myTuple = Sextet.with("hello", 42, 3.14, true, 'c', 1.23f);
+        System.out.println(myTuple);
+    }
+}
+
+
+
+
