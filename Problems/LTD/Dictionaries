@@ -14,3 +14,30 @@ public class DictionaryExample {
         System.out.println(myDictionary);
     }
 }
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class DictionaryExample {
+    public static void main(String[] args) {
+        Map<String, Integer> myDict = new HashMap<>();
+        myDict.put("apple", 2);
+        myDict.put("banana", 4);
+        myDict.put("orange", 3);
+        myDict.put("grape", 1);
+        
+        // To get a subset of the dictionary:
+        Map<String, Integer> subset = new HashMap<>();
+        for (Map.Entry<String, Integer> entry : myDict.entrySet()) {
+            if (entry.getValue() >= 3) {
+                subset.put(entry.getKey(), entry.getValue());
+            }
+        }
+        
+        // Print the subset:
+        System.out.println(subset); // Output: {banana=4, orange=3}
+    }
+}
