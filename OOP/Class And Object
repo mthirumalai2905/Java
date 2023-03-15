@@ -1,0 +1,22 @@
+public class Person {
+    String name;
+    int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void sayHello() {
+        System.out.println("Hello, my name is " + name + " and I am " + age + " years old.");
+    }
+}
+
+
+Person person1 = new Person("Alice", 30);
+
+
+person1.sayHello();
+
+
+Hello, my name is Alice and I am 30 years old.
