@@ -1,0 +1,3 @@
+NOUN - CLASS;(Employee)
+ADJECTIVE - ATTRIBUTE;(name, age, salary)
+VERB -  METHOD;(getSalary(),increment())
