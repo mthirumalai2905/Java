@@ -1,3 +1,10 @@
 NOUN - CLASS;(Employee)
 ADJECTIVE - ATTRIBUTE;(name, age, salary)
 VERB -  METHOD;(getSalary(),increment())
+What is DRY -- Do Not Repeat Yourself
+
+OOPs TERMINOLOGY
+1]ABSTRACTION(hiding internal details)
+2]ENCAPSULATION(phones their netwokring topology)
+3]INHERITANCE(rikshaw - E-rikshaw, phones - smart phones IMPLEMENTS DRY)
+4]POLYMORPHISM( one entity but different faces smartphones used as camera, mp3 player, gallery, calculator )
