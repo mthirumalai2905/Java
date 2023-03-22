@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Exercise{
+
+   public static void main(String[] Strings){
+          Scanner input - new Scanner(System.in);
+          
+          System.out.orintln("Input a degree in Fahrenheit: ");
+          double Fahrenheit = input.nextDouble();
+          
+          double celsius = (( 5 * (Fahrenheit - 32.0)) / 9.0);
+          System.out.println(Fahrenheit + " degree Fahrenheit is equal to " + celsius + " in Celsius");
+          
+          }
+          
+      }
