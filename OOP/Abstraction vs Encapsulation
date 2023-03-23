@@ -1,0 +1,26 @@
+Abstraction and encapsulation are two fundamental concepts in object-oriented programming, 
+and they are often used together to create well-structured and maintainable code. While they are related,
+they serve different purposes and can be distinguished by the following:
+
+Abstraction:
+
+Abstraction is the process of hiding the implementation details of a system,
+focusing only on the essential features or behaviors that are necessary for a given task or function.
+Abstraction is achieved through the use of abstract classes and interfaces in Java. 
+These constructs define a set of methods that must be implemented by any concrete class that inherits or implements them.
+Abstraction helps to reduce complexity and improve code organization by focusing on what an object does rather than how it does it.
+Abstraction is concerned with defining a contract or a set of behaviors that a class should implement, without specifying how it should be implemented.
+
+
+
+
+Encapsulation:
+
+Encapsulation is the process of hiding the internal details of a system or a class, and exposing only the necessary information or interfaces to the outside world.
+Encapsulation is achieved through the use of access modifiers such as public, private, and protected in Java. 
+These modifiers control the visibility of the data and methods defined in a class, preventing external access or modification of the internal state.
+Encapsulation helps to improve security, reduce coupling, and maintain the integrity of the internal state of an object.
+Encapsulation is concerned with keeping the internal state of an object safe and secure, and preventing it from being accessed or modified in unexpected ways.
+In summary, abstraction is focused on defining the essential behaviors of a system or a class, while encapsulation is focused on hiding the internal details and
+protecting the internal state of a system or a class. They are both important concepts in object-oriented programming, 
+and they are often used together to create robust, maintainable, and secure software systems.
