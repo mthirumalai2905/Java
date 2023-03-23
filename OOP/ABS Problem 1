@@ -1,0 +1,173 @@
+Problem: Suppose you are developing a simple game that involves different types of characters (e.g., hero, villain, sidekick) that can perform various actions (e.g., run, jump, attack). 
+You want to implement a system that can handle these different characters and their actions in a flexible and extensible way.
+
+Solution using abstraction:
+
+Create an abstract class called "Character" that defines the common properties and methods of all characters (e.g., name, health, attack method).
+Create concrete classes that extend the Character class and define the specific properties and methods for each type of character (e.g., Hero, Villain, Sidekick).
+Create an interface called "Action" that defines the methods for each action that a character can perform (e.g., run(), jump(), attack()).
+Implement the Action interface in each of the concrete classes to define the specific behavior for each action for each type of character.
+By using abstraction, we can create a flexible and extensible system for handling different types of characters and actions in a game,
+without having to create separate code for each combination of character and action.
+We can also easily add new types of characters or actions by extending the existing classes and interfaces, 
+without having to modify the existing code.
+
+
+
+
+***************************************************************SOLUTIONS**************************************************************************************************
+
+// Step 1:- Create an abstract class for character
+
+public abstract class Character{
+       private String name;
+       private int health;
+       private String attackMethod;
+       
+ public Character(String name, int health, String attackMethod){
+      this.name = name;
+      this.health = health;
+      this.attackMethod = attackMethod;
+    }
+    
+    
+  public String getName(){
+         return name;
+    }
+    
+  public int getHealth(){
+         return health;
+    }
+    
+   public String getattackMethod(){
+          return attackMethod;
+    }
+    
+    public void takeDamage(int Damage){
+          health -= Damage;
+    }
+    
+    public abstract void display();
+    }
+    
+    
+    //Step 2: Create concrete classes for each type of Character
+    public class Hero extends Character{
+    public Hero(String name, int Health, String attackMethod){
+            super(name, health, attackMethod);
+    }
+    
+    
+    @Override
+    public void display(){
+    System.out.println("I am a hero");
+    }
+  }
+  
+  public class Villian extends Character{
+         public Villian(String name, int health, attackMethod){
+                  super(name, health, attackMethod);
+                  }
+                  
+     @Override
+     public void display(){
+     System.out.println("I am a villian!");
+     }
+ }
+ 
+ 
+ public class Sidekick extends Character {
+    public Sidekick(String name, int health, String attackMethod) {
+        super(name, health, attackMethod);
+    }
+    
+    @Override
+    public void display() {
+        System.out.println("I am a sidekick!");
+    }
+}
+
+
+//Step 3 : Create an interface for Action
+
+public interface Action{
+       public void run();
+       public void jump();
+       public void attack(Character character);
+ }
+ 
+// Step 4 : Implement the Action interface in each concrete class
+
+public class Hero implements Action{
+// ... other methods and properties
+
+    @override
+     public void run() {
+        System.out.println("Hero is running!");
+    }
+    
+    @Override
+    public void jump() {
+        System.out.println("Hero is jumping!");
+    }
+    
+    @Override
+    public void attack(Character character) {
+        System.out.println("Hero is attacking " + character.getName() + " with " + getAttackMethod());
+        character.takeDamage(10);
+    }
+}
+ 
+    public class Villain implements Action {
+    // ... other methods and properties
+    
+    @Override
+    public void run() {
+        System.out.println("Villain is running!");
+    }
+    
+    @Override
+    public void jump() {
+        System.out.println("Villain is jumping!");
+    }
+    
+    @Override
+    public void attack(Character character) {
+        System.out.println("Villain is attacking " + character.getName() + " with " + getAttackMethod());
+        character.take
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
