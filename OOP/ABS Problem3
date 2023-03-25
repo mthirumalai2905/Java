@@ -1,0 +1,28 @@
+package trying;
+
+
+abstract class Animal{
+    public abstract void makeSound();
+}
+
+class Dog extends Animal{
+    public void makeSound(){
+        System.out.println("Woof barkinng ... ");
+    }
+}
+
+class Cat extends Animal{
+    public void makeSound(){
+        System.out.println("Meow meowing");
+    }
+}
+public class animals {
+        public static void main(String[] args) {
+            Animal animal1 = new Dog();
+            Animal animal2 = new Cat();
+
+            animal1.makeSound(); // Output: Woof
+            animal2.makeSound(); // Output: Meow
+        }
+
+}
